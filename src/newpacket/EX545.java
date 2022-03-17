@@ -15,11 +15,11 @@ public class EX545 {
 		double sevage=sum/10.0;
 		double fangcha2=(sum2-((sum*sum)/10.0))/9.0;
 		double fangcha=Math.sqrt(fangcha2);
-		getTwoDecimalPlaces(fangcha);
+		fangcha=getTwoDecimalPlaces(fangcha);
 		System.out.println(sevage+" "+fangcha);
 	}
 	private static double getTwoDecimalPlaces(double original) {
-		return (double) Math.floor(original * 100) / 100;
+		return (double) Math.floor(original * 100000) / 100000;
 	}
 
 }
